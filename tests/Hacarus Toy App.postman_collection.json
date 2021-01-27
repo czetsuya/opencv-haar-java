@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "259d84c5-8412-4dc1-9013-977fd0a4162d",
+		"name": "Hacarus Toy App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Detect object - hardcoded image in code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/poly/objects/detect/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poly",
+						"objects",
+						"detect",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detect object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/czetsuya/project/quarkus/hacarus-toy-backend/src/main/resources/image.jpg"
+						},
+						{
+							"key": "fileName",
+							"value": "stop_image",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/poly/objects/detect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poly",
+						"objects",
+						"detect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test JS on GraalVM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/poly/js",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poly",
+						"js"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Python on GraalVM - Only works on Ubuntu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/poly/py",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poly",
+						"py"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
