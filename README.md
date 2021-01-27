@@ -54,7 +54,7 @@ Swagger UI is accessible at http://localhost:8080/q/swagger-ui.
 
 ## Testing
 
-To test this application Open the "Hacarus Toy App" Postman collection inside the test folder.
+To test this application Open the "OpenCV Haar in Java" Postman collection inside the test folder.
 
 - Detect object - process a hardcoded image in code
 - Detect object - accepts an image parameter and a filename use to cache the processed image. Make sure to change the attached image as it is lost during transfer.
