@@ -3,12 +3,12 @@
 At the heart of many machine vision solutions is a software package named OpenCV. Since I'm a Java developer, I'm wondering if I can take advantage of this Python library inside a Java application.
 
 In this project, I created a backend application that can be tested using CURL or Postman that will integrate a
-simple openCV application. The API endpoint or endpoints handle all the inputs required
-by the application. Link to the openCV application can be found here:
+simple OpenCV application. The API endpoint or endpoints handle all the inputs required
+by the application. Link to the OpenCV application can be found here:
 https://www.geeksforgeeks.org/detect-an-object-with-opencv-python/
 
 This exercise is done using Quarkus, a serverless framework for JavaEE.
-To use the OpenCV, it is compiled to generate a jar and so library that is use by the Java application.
+To use the OpenCV, it is compiled to generate a jar and so library that is used by the Java application.
 
 ## Packaging and running the application
 
