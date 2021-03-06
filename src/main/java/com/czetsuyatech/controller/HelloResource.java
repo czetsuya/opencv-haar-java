@@ -1,4 +1,4 @@
-package com.hacarus.controller;
+package com.czetsuyatech.controller;
 
 import org.eclipse.microprofile.openapi.annotations.Operation;
 

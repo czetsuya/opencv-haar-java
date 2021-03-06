@@ -1,4 +1,4 @@
-package com.hacarus;
+package com.czetsuyatech;
 
 import io.quarkus.test.junit.NativeImageTest;
 

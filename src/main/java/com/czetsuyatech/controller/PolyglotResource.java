@@ -1,7 +1,7 @@
-package com.hacarus.controller;
+package com.czetsuyatech.controller;
 
-import com.hacarus.business.domain.MultipartBody;
-import com.hacarus.business.service.HaarService;
+import com.czetsuyatech.business.domain.MultipartBody;
+import com.czetsuyatech.business.service.HaarService;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;

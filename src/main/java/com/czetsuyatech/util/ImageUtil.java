@@ -1,4 +1,4 @@
-package com.hacarus.util;
+package com.czetsuyatech.util;
 
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
