@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
-        xmlns="http://maven.apache.org/POM/4.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.czetsuyatech</groupId>
     <artifactId>opencv-haar-java</artifactId>
@@ -18,7 +18,7 @@
         <quarkus-plugin.version>1.11.0.Final</quarkus-plugin.version>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <graalvm.version>21.0.0</graalvm.version>
+        <graalvm.version>20.3.0</graalvm.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -59,11 +59,26 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/resources/opencv-451.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>org.graalvm.js</groupId>
-            <artifactId>js</artifactId>
-            <version>${graalvm.version}</version>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.graalvm.sdk</groupId>-->
+        <!--            <artifactId>graal-sdk</artifactId>-->
+        <!--            <version>${graalvm.version}</version>-->
+        <!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.graalvm.truffle</groupId>-->
+<!--            <artifactId>truffle-api</artifactId>-->
+<!--            <version>${graalvm.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.graalvm.js</groupId>-->
+<!--            <artifactId>js-scriptengine</artifactId>-->
+<!--            <version>${graalvm.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.graalvm.js</groupId>-->
+<!--            <artifactId>js</artifactId>-->
+<!--            <version>${graalvm.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.jboss.slf4j</groupId>
             <artifactId>slf4j-jboss-logmanager</artifactId>
@@ -96,7 +111,15 @@
                             <goal>build</goal>
                             <goal>generate-code</goal>
                             <goal>generate-code-tests</goal>
+                            <goal>native-image</goal>
                         </goals>
+                        <configuration>
+                            <enableHttpUrlHandler>true</enableHttpUrlHandler>
+                            <additionalBuildArgs>
+                                <additionalBuildArg>--language:js</additionalBuildArg>
+                                <additionalBuildArg>--language:python</additionalBuildArg>
+                            </additionalBuildArgs>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
