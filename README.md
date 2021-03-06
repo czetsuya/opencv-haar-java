@@ -1,17 +1,14 @@
 # OpenCV Haar Java Backend Application Challenge
 
-The challenge:
-At the heart of many machine vision solutions is a software package named OpenCV. In order
-to test applicant adaptability to one of many software packages used by the team, this challenge
-involves a toy backend application.
+At the heart of many machine vision solutions is a software package named OpenCV. Since I'm a Java developer, I'm wondering if I can take advantage of this Python library inside a Java application.
 
-Create a simple toy backend that can be tested using CURL or Postman that will integrate a
-simple openCV application. The API endpoint or endpoints must handle all the inputs required
-by the application. Link to the openCV application can be found here:
+In this project, I created a backend application that can be tested using CURL or Postman that will integrate a
+simple OpenCV application. The API endpoint or endpoints handle all the inputs required
+by the application. Link to the OpenCV application can be found here:
 https://www.geeksforgeeks.org/detect-an-object-with-opencv-python/
 
 This exercise is done using Quarkus, a serverless framework for JavaEE.
-To use the OpenCV, it is compiled to generate a jar and so library that is use by the Java application.
+To use the OpenCV, it is compiled to generate a jar and so library that is used by the Java application.
 
 ## Packaging and running the application
 
@@ -35,7 +32,7 @@ It creates a container from Ubuntu 20.04 with the following components:
 - PIP
 - Cmake
 
-It checks out the OpenCV code 4.5.1 and builds the library that will be use by the Java app.
+It checks out the OpenCV code 4.5.1 and builds the library that will be used by the Java app.
 
 ```shell script
 docker build -f src/main/docker/Dockerfile.jvm -t quarkus/opencv-haar-java-jvm .
@@ -54,7 +51,7 @@ Swagger UI is accessible at http://localhost:8080/q/swagger-ui.
 
 ## Testing
 
-To test this application Open the "Hacarus Toy App" Postman collection inside the test folder.
+To test this application Open the "OpenCV Haar in Java" Postman collection inside the test folder.
 
 - Detect object - process a hardcoded image in code
 - Detect object - accepts an image parameter and a filename use to cache the processed image. Make sure to change the attached image as it is lost during transfer.
