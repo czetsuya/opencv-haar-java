@@ -1,12 +1,9 @@
 # OpenCV Haar Java Backend Application Challenge
 
-The challenge:
-At the heart of many machine vision solutions is a software package named OpenCV. In order
-to test applicant adaptability to one of many software packages used by the team, this challenge
-involves a toy backend application.
+At the heart of many machine vision solutions is a software package named OpenCV. Since I'm a Java developer, I'm wondering if I can take advantage of this Python library inside a Java application.
 
-Create a simple toy backend that can be tested using CURL or Postman that will integrate a
-simple openCV application. The API endpoint or endpoints must handle all the inputs required
+In this project, I created a backend application that can be tested using CURL or Postman that will integrate a
+simple openCV application. The API endpoint or endpoints handle all the inputs required
 by the application. Link to the openCV application can be found here:
 https://www.geeksforgeeks.org/detect-an-object-with-opencv-python/
 
