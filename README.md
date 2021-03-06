@@ -32,7 +32,7 @@ It creates a container from Ubuntu 20.04 with the following components:
 - PIP
 - Cmake
 
-It checks out the OpenCV code 4.5.1 and builds the library that will be use by the Java app.
+It checks out the OpenCV code 4.5.1 and builds the library that will be used by the Java app.
 
 ```shell script
 docker build -f src/main/docker/Dockerfile.jvm -t quarkus/opencv-haar-java-jvm .
