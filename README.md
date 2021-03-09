@@ -1,4 +1,6 @@
-# OpenCV Haar Java Backend Application Challenge
+*If you would like to support these tutorials, you can contribute to my [Patreon account](https://patreon.com/czetsuya)
+
+# OpenCV Haar with Java Backend Application
 
 At the heart of many machine vision solutions is a software package named OpenCV. Since I'm a Java developer, I'm wondering if I can take advantage of this Python library inside a Java application.
 
